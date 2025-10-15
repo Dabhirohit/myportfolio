@@ -463,3 +463,109 @@ body {
   .contact-info-card { order: -1; }
   .pdf-wrap { height: 60vh; }
 }
+
+/* ===== UNIVERSAL RESPONSIVE BREAKPOINTS ===== */
+
+/* Small Mobile (up to 480px) */
+@media (max-width: 480px) {
+  body {
+    font-size: 14px;
+    padding: 0 5%;
+  }
+
+  .home h1 {
+    font-size: 36px;
+  }
+  .home h3 {
+    font-size: 20px;
+  }
+  .home p {
+    font-size: 14px;
+  }
+
+  .home-img img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .about,
+  .skills,
+  .projects,
+  .contact {
+    padding: 60px 5%;
+  }
+
+  .skill-card {
+    padding: 15px 20px;
+    font-size: 14px;
+  }
+
+  .project-card {
+    padding: 20px;
+  }
+
+  .contact-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Tablet (481px - 900px) */
+@media (min-width: 481px) and (max-width: 900px) {
+  body {
+    font-size: 16px;
+    padding: 0 8%;
+  }
+
+  .home h1 {
+    font-size: 48px;
+  }
+  .home h3 {
+    font-size: 24px;
+  }
+
+  .about,
+  .skills,
+  .projects,
+  .contact {
+    padding: 80px 8%;
+  }
+
+  .skills-box {
+    gap: 15px;
+  }
+
+  .project-list {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  }
+
+  .contact-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Laptop & Desktop (901px and up) */
+@media (min-width: 901px) {
+  body {
+    font-size: 18px;
+    padding: 0;
+  }
+
+  .home h1 {
+    font-size: 60px;
+  }
+  .home h3 {
+    font-size: 28px;
+  }
+
+  .about,
+  .skills,
+  .projects,
+  .contact {
+    padding: 100px 10%;
+  }
+
+  .project-list {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+}
+
